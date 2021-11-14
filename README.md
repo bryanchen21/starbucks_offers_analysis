@@ -6,7 +6,7 @@
 5. References
 
 ### File Descriptions
-- The Jupyter notebook contains the codes used for this exploratory analysis. 
+- The Jupyter notebook contains the codes used for creating the machine learning model. 
 - prepare_data.py contains the code used to clean, wrangle and format the data. 
 - The "data" folder contains the json files for portfolio, profile and transcript for this Udacity final project. 
 - The "assets" folder contains the charts and results from the Jupyter Notebook. 
