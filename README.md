@@ -53,6 +53,7 @@ seeks to predict the likelihood of success of an offer based on a list of key fe
 a) Demographic data 
 - There are 2,175 rows where the customer's gender and income are missing, and age is 118. These are likely to be errors in the data and thus are removed. 
 - The number of years in which a customer has been a member is calculated based on his/her membership date. 
+
 b) Portfolio data
 - Using one hot encoding, we create dummy variables as to whether the offer is available through web, email, mobile and social. 4 dummy variables are created. 
 
@@ -110,7 +111,7 @@ Preview of the master dataset is as below:
 
 3. <ins>Data Modeling  </ins>
 
-Using the master dataset, we create a model to predict whether the offer worked using the list of predictors below:
+Using the master dataset, we create a model to predict whether the offer worked using the list of features below:
 
 a) whether the offer was viewed.
 
@@ -172,7 +173,7 @@ Normalised data gave us a marginal improvement in accuracy for Random Forest mod
 
 5. <ins>Discussion</ins>
 
-Using the MinMaxScaker function from sklearn, we find that normalised data produces better results than running the models on un-normalised data. Normalised data constraints the values 
+Using the MinMaxScaler function from sklearn, we find that normalised data produces better results than running the Logistic Regression on un-normalised data. Normalised data constraints the values 
 of a feature such that it is between 0 and 1. Without normalisation, variables that are measured at different scales do not contribute equally to the model fitting. Normalisation helps to 
 avoid potential bias in our model. 
 
@@ -207,10 +208,10 @@ more likely to work for those that have been members for longer. Also, offer has
 if on social media.
 
 Therefore, the recommendation based on the results is to invest more in making the offer more visible on the Starbucks app, and also target loyal customers that have been with
-Starbucks for a long time, who are older and earn a high income. Also, Starbucks should also invest in making offers available on its social media compared to other channels
+Starbucks for a long time, who are older and earn a high income. Also, Starbucks should invest in making offers available on its social media compared to other channels
 like website or email. These will ensure that Starbucks gets a higher return on investment on its offers. 
 
-More details on the findings can be found in the Jupyter notebook [here](https://medium.com/@bryanchen21/londons-airbnb-market-explained-visually-2b9bb4d746aa).
+More details on the findings can be found in the Jupyter notebook [here](https://github.com/bryanchen21/starbucks_offers_analysis/blob/master/Starbucks_Capstone_notebook.ipynb).
 
 
 ### Author
